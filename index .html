@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VILLA MIX — Menú Digital</title>
+<style>
+:root{
+  --bg:#080b09; --panel:#101612; --green:#79a86b; --gold:#d5b66b;
+  --text:#f4f1e9; --muted:#b9beb7; --line:#2b352d;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif}
+.menu{width:100%;max-width:900px;margin:auto;padding:28px 20px 40px;background:linear-gradient(180deg,#090d0a 0%,#0d120e 100%)}
+.header{text-align:center;padding:24px 10px 18px;border-bottom:1px solid var(--gold)}
+.brand{font-size:clamp(42px,9vw,76px);letter-spacing:8px;font-weight:700;margin:0;color:var(--text)}
+.subtitle{color:var(--green);letter-spacing:5px;font-size:13px;margin-top:8px}
+.intro{color:var(--muted);font-style:italic;margin:14px auto 0;max-width:620px}
+.section{margin-top:27px}
+.section-title{text-align:center;color:var(--gold);letter-spacing:4px;font-size:21px;margin:0 0 17px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.sub{color:var(--green);font-size:15px;letter-spacing:2px;text-transform:uppercase;margin:18px 0 9px}
+.item{margin:0 0 12px}
+.row{display:flex;align-items:baseline;gap:8px}
+.name{font-weight:700;font-size:16px}
+.dots{flex:1;border-bottom:1px dotted #4b554d;transform:translateY(-4px)}
+.price{font-weight:700;color:var(--gold);white-space:nowrap}
+.desc{font-family:Arial,sans-serif;color:var(--muted);font-size:12.5px;line-height:1.42;margin-top:3px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.note{text-align:center;color:var(--muted);font-size:11px;letter-spacing:1px;margin-top:-8px;margin-bottom:15px}
+.snack{padding:15px 0;border-bottom:1px solid var(--line)}
+.snack:last-child{border-bottom:0}
+.snack h3{margin:0 0 5px;color:var(--text);font-size:17px}
+.snack .price-big{float:right;color:var(--gold);font-weight:bold;font-size:18px}
+.snack p{font-family:Arial,sans-serif;color:var(--muted);font-size:12.5px;line-height:1.5;margin:5px 0}
+.tags{color:var(--green)!important}
+.footer{text-align:center;border-top:1px solid var(--gold);margin-top:25px;padding-top:20px;color:var(--muted);font-style:italic}
+@media(max-width:650px){
+  .grid{grid-template-columns:1fr}
+  .menu{padding:20px 16px 30px}
+  .brand{letter-spacing:5px}
+}
+@media print{
+  body{background:#fff}.menu{max-width:none;background:#fff;color:#111}
+}
+</style>
+</head>
+<body>
+<main class="menu">
+<header class="header">
+<h1 class="brand">VILLA MIX</h1>
+<div class="subtitle">COCKTAILS · MIXOLOGÍA · EXPERIENCIAS</div>
+<p class="intro">El arte de brindar, el placer de compartir.</p>
+</header>
+
+<section class="section">
+<h2 class="section-title">COCKTAILS</h2>
+
+<h3 class="sub">Creación de la casa</h3>
+<div class="item"><div class="row"><span class="name">Mis dos Tierras</span><span class="dots"></span><span class="price">$120</span></div><div class="desc">Tequila Blanco, Vodka, Sumo de Limón, Sumo de Naranja, Sumo de Mandarina, Jarabe Endulzado y Solución Salina.</div></div>
+<div class="item"><div class="row"><span class="name">Crimson Truce</span><span class="dots"></span><span class="price">$120</span></div><div class="desc">Whisky Escoces, Aperol, Sumo de Limón, Sumo de Arándano y Jarabe Endulzado.</div></div>
+
+<h3 class="sub">Whisky</h3>
+<div class="item"><div class="row"><span class="name">Old Fashioned</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Whisky Escoces, Azucar y Bitters Angostura.</div></div>
+<div class="item"><div class="row"><span class="name">Whisky Sour</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Whisky Escoces, Sumo de Limon, Jarabe Endulzado y Clara de Huevo.</div></div>
+<div class="item"><div class="row"><span class="name">Manhattan</span><span class="dots"></span><span class="price">$115</span></div><div class="desc">Whisky Escoces, Vermouth Osso y Bitters Angostura.</div></div>
+
+<h3 class="sub">Ron</h3>
+<div class="item"><div class="row"><span class="name">Mojito</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ron Blanco, Azucar, Sumo de Limon, Hierbabuena y Agua Mineral.</div></div>
+<div class="item"><div class="row"><span class="name">Mojito de Fresa</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ron Blanco, Azúcar, Sumo de Limón, Hierbabuena, Agua Mineral y Fresa.</div></div>
+<div class="item"><div class="row"><span class="name">Daiquiri</span><span class="dots"></span><span class="price">$100</span></div><div class="desc">Ron Blanco, Sumo de Limón y Jarabe Endulzado.</div></div>
+<div class="item"><div class="row"><span class="name">Daiquiri Frozen de Fresa</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ron Blanco, Sumo de Limon, Jarabe Endulzado y Fresa.</div></div>
+<div class="item"><div class="row"><span class="name">Daiquiri Frozen de Mango</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ron Blanco, Sumo de Limon, Jarabe Endulzado y Mango.</div></div>
+<div class="item"><div class="row"><span class="name">Piña Colada</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ron sabor Coco, Jugo de Piña y Crema de Coco.</div></div>
+<div class="item"><div class="row"><span class="name">Mai Tai</span><span class="dots"></span><span class="price">$130</span></div><div class="desc">Ron Blanco, Ron Añejo, Triple Sec, Amaretto, Sumo de Naranja, Sumo de Piña, Sumo de Limón y Jarabe de Granadina.</div></div>
+
+<h3 class="sub">Ginebra</h3>
+<div class="item"><div class="row"><span class="name">Dry Martini</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ginebra, Vermouth Seco y Aceitunas.</div></div>
+<div class="item"><div class="row"><span class="name">Tom Collins</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ginebra, Sumo de Limón, Jarabe endulzado y Agua Mineral.</div></div>
+<div class="item"><div class="row"><span class="name">Negroni</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Ginebra, Vermouth Rosso y Campari.</div></div>
+
+<h3 class="sub">Vodka</h3>
+<div class="item"><div class="row"><span class="name">Cosmopolitan</span><span class="dots"></span><span class="price">$100</span></div><div class="desc">Vodka Citron, Triple Sec, Sumo de Limón y Sumo de Arándano.</div></div>
+<div class="item"><div class="row"><span class="name">Sex on the Beach</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Vodka, Licor de Melocotón, Sumo de Naranja, Sumo Arándano, Jarabe de Granadina.</div></div>
+<div class="item"><div class="row"><span class="name">Moscow Mule</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Vodka, Sumo de Limon, Ginger Ale.</div></div>
+
+<h3 class="sub">Mezcal</h3>
+<div class="item"><div class="row"><span class="name">Mezcalita</span><span class="dots"></span><span class="price">$120</span></div><div class="desc">Mezcal, Sumo de Limon, Sumo de Naranja, Jarabe Endulzado y Sangrita.</div></div>
+
+<h3 class="sub">Tequila</h3>
+<div class="item"><div class="row"><span class="name">Margarita</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Tequila Blanco o Reposado, Triple Sec, Sumo de Limon y Jarabe endulzado.</div></div>
+<div class="item"><div class="row"><span class="name">Margarita Frozen de Fresa</span><span class="dots"></span><span class="price">$120</span></div><div class="desc">Tequila Blanco o Reposado, Triple Sec, Sumo de Limon, Jarabe endulzado y Fresa.</div></div>
+<div class="item"><div class="row"><span class="name">Margarita Frozen de Mango</span><span class="dots"></span><span class="price">$120</span></div><div class="desc">Tequila Blanco o Reposado, Triple Sec, Sumo de Limon, Jarabe endulzado y Mango.</div></div>
+<div class="item"><div class="row"><span class="name">Vampiro</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Tequila Blanco o Reposado, Sumo de Limon, Sangrita y Refresco de Toronja.</div></div>
+<div class="item"><div class="row"><span class="name">Paloma</span><span class="dots"></span><span class="price">$100</span></div><div class="desc">Tequila Blanco o Reposado, Sumo de Limon y Refresco de Toronja.</div></div>
+</section>
+
+<section class="section">
+<h2 class="section-title">DIGESTIVOS</h2>
+<div class="grid">
+<div class="item"><div class="row"><span class="name">Orgasmo</span><span class="dots"></span><span class="price">$110</span></div><div class="desc">Licor de Cafe, Amaretto y Baileys.</div></div>
+<div class="item"><div class="row"><span class="name">Licor 43</span><span class="dots"></span><span class="price">$90</span></div></div>
+<div class="item"><div class="row"><span class="name">Jägermeister</span><span class="dots"></span><span class="price">$80</span></div></div>
+<div class="item"><div class="row"><span class="name">Amaretto</span><span class="dots"></span><span class="price">$80</span></div></div>
+<div class="item"><div class="row"><span class="name">Licor de Cafe</span><span class="dots"></span><span class="price">$80</span></div></div>
+<div class="item"><div class="row"><span class="name">Limoncello</span><span class="dots"></span><span class="price">$80</span></div></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">JUGOS · 1 LITRO</h2>
+<div class="grid">
+<div class="item"><div class="row"><span class="name">Jugo de Naranja Con Vodka</span><span class="dots"></span><span class="price">$100</span></div></div>
+<div class="item"><div class="row"><span class="name">Jugo de Durazno con Vodka</span><span class="dots"></span><span class="price">$100</span></div></div>
+<div class="item"><div class="row"><span class="name">Jugo de Piña con Vodka</span><span class="dots"></span><span class="price">$100</span></div></div>
+<div class="item"><div class="row"><span class="name">Jugo de Mango con Vodka</span><span class="dots"></span><span class="price">$100</span></div></div>
+<div class="item"><div class="row"><span class="name">Jugo de Arándano con Vodka</span><span class="dots"></span><span class="price">$100</span></div></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">CERVEZA</h2>
+<div class="grid">
+<div class="item"><div class="row"><span class="name">Corona</span><span class="dots"></span><span class="price">$30</span></div></div>
+<div class="item"><div class="row"><span class="name">Victoria</span><span class="dots"></span><span class="price">$30</span></div></div>
+<div class="item"><div class="row"><span class="name">Modelo Especial</span><span class="dots"></span><span class="price">$40</span></div></div>
+<div class="item"><div class="row"><span class="name">Modelo Negra</span><span class="dots"></span><span class="price">$40</span></div></div>
+</div>
+<h3 class="sub">Preparados</h3>
+<div class="item"><div class="row"><span class="name">Michelada</span><span class="dots"></span><span class="price">$70</span></div><div class="desc">Cerveza (Corona o Victoria), Clamato, Limón, Sal, Salsa Inglesa y Salsa Maggi.</div></div>
+<div class="item"><div class="row"><span class="name">Tarro Michelado</span><span class="dots"></span><span class="price">$15</span></div></div>
+</section>
+
+<section class="section">
+<h2 class="section-title">MOCKTAILS · SIN ALCOHOL</h2>
+<div class="item"><div class="row"><span class="name">Nojito</span><span class="dots"></span><span class="price">$80</span></div><div class="desc">Sumo de Limón, Azúcar, Hierbabuena y Agua Mineral.</div></div>
+<div class="item"><div class="row"><span class="name">Shirley Temple</span><span class="dots"></span><span class="price">$80</span></div><div class="desc">Sumo de Limon, Jarabe de Granadina y Ginger Ail.</div></div>
+<div class="item"><div class="row"><span class="name">San Francisco</span><span class="dots"></span><span class="price">$80</span></div><div class="desc">Sumo de Naranja, Sumo de Piña, Sumo de Melocotón, Sumo de Limón y Jarabe de Granadina.</div></div>
+<div class="item"><div class="row"><span class="name">Naranjada</span><span class="dots"></span><span class="price">$30</span></div><div class="desc">Agua Natural o Mineral, Jarabe Endulzado, Jugo de Naranja.</div></div>
+<div class="item"><div class="row"><span class="name">Limonada</span><span class="dots"></span><span class="price">$30</span></div><div class="desc">Agua Natural o Mineral, Jarabe Endulzado, Jugo de Limón.</div></div>
+</section>
+
+<section class="section">
+<h2 class="section-title">SNACKS</h2>
+
+<div class="snack">
+<span class="price-big">$350</span>
+<h3>Tabla de Carnes Ahumadas</h3>
+<div class="note">2 A 3 PERSONAS</div>
+<p>Pechuga de Pollo, Lomo y Espaldilla de Cerdo Ahumados, Flor de Pepperoni, quesos variados, galletas tipo crackets, aceitunas verdes, uvas verdes y rojas, fresas, arandanos y frutos secos.</p>
+<p class="tags">Acompañada de mermeladas y salsas artesanales: Cebolla caramelizada · fresa con chile morita · salsa macha.</p>
+</div>
+
+<div class="snack">
+<span class="price-big">$300</span>
+<h3>Tabla de Quesos y Frutas</h3>
+<p>Selección de quesos acompañados de galletas tipo crackets, aceitunas verdes, uvas, fresas, arándanos, frutos secos y dio cremoso.</p>
+<p class="tags">Incluye mermeladas y salsas artesanales: Cebolla caramelizada · fresa con chile morita · Salsa Macha.</p>
+</div>
+
+<div class="snack">
+<span class="price-big">$15 / PIEZA</span>
+<h3>Panecitos de Hojaldre</h3>
+<p><strong>Salados:</strong> Queso con Pepperoni · Queso con Jamon · Queso con Champiñones · Queso con Tocino.</p>
+<p><strong>Dulces:</strong> Chocolate · Queso crema con mermelada de Fresa · Queso crema con Zarzamora.</p>
+<p class="tags">Acompañados por salsas de tu elección: Cebolla Caramelizada · Fresa con chile morita · Salsa Macha · Chipotle.</p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">OTROS</h2>
+<div class="grid">
+<div class="item"><div class="row"><span class="name">Orden de Papas Preparadas</span><span class="dots"></span><span class="price">$40</span></div></div>
+<div class="item"><div class="row"><span class="name">Orden de Pepinos Preparados</span><span class="dots"></span><span class="price">$25</span></div></div>
+<div class="item"><div class="row"><span class="name">Cigarros</span><span class="dots"></span><span class="price">$10</span></div></div>
+</div>
+</section>
+
+
+<section class="section">
+  <h2 class="section-title">DESTILADOS</h2>
+
+  <h3 class="sub">Tequila</h3>
+  <div class="item"><div class="row"><span class="name">1800 Cristalino</span><span class="dots"></span><span class="price">$120</span></div></div>
+  <div class="item"><div class="row"><span class="name">1800 Reposado</span><span class="dots"></span><span class="price">$80</span></div></div>
+  <div class="item"><div class="row"><span class="name">Maestro Dobel Diamante</span><span class="dots"></span><span class="price">$120</span></div></div>
+  <div class="item"><div class="row"><span class="name">Centenario Plata</span><span class="dots"></span><span class="price">$60</span></div></div>
+  <div class="item"><div class="row"><span class="name">Centenario Reposado</span><span class="dots"></span><span class="price">$60</span></div></div>
+  <div class="item"><div class="row"><span class="name">Don Julio 70</span><span class="dots"></span><span class="price">$160</span></div></div>
+  <div class="item"><div class="row"><span class="name">Jose Cuervo Tradicional Reposado</span><span class="dots"></span><span class="price">$70</span></div></div>
+  <div class="item"><div class="row"><span class="name">Jose Cuervo Tradicional Plata</span><span class="dots"></span><span class="price">$70</span></div></div>
+  <div class="item"><div class="row"><span class="name">Tequila Ocho Plata</span><span class="dots"></span><span class="price">$110</span></div></div>
+
+  <h3 class="sub">Vodka</h3>
+  <div class="item"><div class="row"><span class="name">Absolut Vodka</span><span class="dots"></span><span class="price">$60</span></div></div>
+
+  <h3 class="sub">Ron</h3>
+  <div class="item"><div class="row"><span class="name">Bacardi Carta Blanca</span><span class="dots"></span><span class="price">$60</span></div></div>
+
+  <h3 class="sub">Whisky</h3>
+  <div class="item"><div class="row"><span class="name">Jhonnie Walker Red Label</span><span class="dots"></span><span class="price">$60</span></div></div>
+  <div class="item"><div class="row"><span class="name">Buchanan’s De Luxe 12</span><span class="dots"></span><span class="price">$120</span></div></div>
+  <div class="item"><div class="row"><span class="name">Jack Daniel’s Jennesee</span><span class="dots"></span><span class="price">$100</span></div></div>
+
+  <h3 class="sub">Vino</h3>
+  <div class="item"><div class="row"><span class="name">Monteviña</span><span class="dots"></span><span class="price">$50</span></div></div>
+  <div class="item"><div class="row"><span class="name">Casillero del Diablo</span><span class="dots"></span><span class="price">$50</span></div></div>
+
+  <h3 class="sub">Mezcal</h3>
+  <div class="item"><div class="row"><span class="name">400 Conejos</span><span class="dots"></span><span class="price">$100</span></div></div>
+</section>
+
+<footer class="footer">
+VILLA MIX<br>
+<span style="font-family:Arial,sans-serif;font-size:11px;letter-spacing:2px;">COCKTAILS · MIXOLOGÍA · EXPERIENCIAS</span>
+</footer>
+</main>
+</body>
+</html>
